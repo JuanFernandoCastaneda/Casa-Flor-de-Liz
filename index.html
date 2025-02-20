@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-escudo.png">
+    <title>Casa Flor de Liz</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        header>img {
+            width: min(35vw, 11rem);
+            height: min(35vw, 11rem);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: min(5%, 3.6rem);
+            background-color: #68b04d;
+            height: min(15vh, 11.5rem);
+            display: flex;
+            justify-content: center;
+        }
+
+        footer>div {
+            background-color: #1c8a43;
+            height: 100%;
+            width: 80vw;
+        }
+
+        h3 {
+            font-size: min(5vw, 2.16rem);
+        }
+
+        #promo-desierto {
+            height: min(58vw, 42rem);
+            width: 100vw;
+            background-image: url("foto-desierto.jpg");
+            display: flex;
+            justify-content: center;
+        }
+
+        #promo-desierto>div {
+            height: inherit;
+            width: min(100vw, 72rem);
+        }
+
+        #promo-desierto>div>img {
+            height: inherit;
+            width: inherit;
+        }
+
+        #texto-desierto {
+            position: absolute;
+            height: inherit;
+            width: min(40vw, 29rem);
+            left: 50vw;
+            background-color: rgb(205, 135, 27, 0.85);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #texto-desierto>h3 {
+            color: black;
+            margin: 10%;
+            margin-bottom: 4%;
+        }
+
+        #texto-desierto>h2 {
+            color: #8b0000;
+            font-size: min(6vw, 4.3rem);
+            margin: 10%;
+            margin-top: 4%;
+        }
+
+        #promo-hotel>div {
+            height: min(60vw, 30rem);
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #promo-hotel>div>img {
+            height: 80%;
+            width: min(100vw, 50rem);
+        }
+
+        #servicios-hotel {
+            width: 100vw;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #servicios-hotel>div {
+            width: min(90vw, 40rem);
+            height: fit-content;
+            background-color: #9fe884;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #servicios-hotel>div>.carta {
+            padding: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #servicios-hotel>div>.carta>img {
+            width: 25%;
+            aspect-ratio: 1/1;
+            padding: 5%;
+            filter: brightness(0) saturate(100%) invert(43%) sepia(49%) saturate(642%) hue-rotate(86deg) brightness(96%) contrast(88%);
+        }
+        #servicios-hotel>div>.carta>h4 {
+            flex-grow: 1;
+            font-size: min(3vw, 1.5rem);
+            color: #289349;
+            text-align: center;
+            text-wrap: wrap;
+        }
+        #ubicacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #ubicacion>iframe{
+            width: min(90vw 40rem);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo-hotel-2.png">
+    </header>
+    <div></div>
+    <main>
+        <div id="promo-desierto">
+            <div class="background">
+                <div id="texto-desierto">
+                    <h3>Vive la experiencia</h3>
+                    <h2>DESIERTO DE LA TATACOA</h2>
+                </div>
+                <img src="foto-desierto.jpg">
+            </div>
+        </div>
+        <div id="promo-hotel">
+            <div class="background">
+                <h3>Conoce nuestro hotel</h3>
+                <img src="hotel-piscina.jpg">
+            </div>
+        </div>
+        <div id="servicios-hotel">
+            <h3>Nuestros servicios</h3>
+            <div>
+                <div class="carta">
+                    <img src="icono-central.png">
+                    <h4>Ubicación central</h4>
+                </div>
+                <div class="carta">
+                    <img src="icono-ac.png">
+                    <h4>Aire acondicionado</h4>
+                </div>
+                <div class="carta">
+                    <img src="icono-piscina.png">
+                    <h4>Piscina</h4>
+                </div>
+                <div class="carta">
+                    <img src="icono-wifi.png">
+                    <h4>Wifi</h4>
+                </div>
+            </div>
+        </div>
+        <div id="ubicacion">
+            <h3>Nuestra ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.519066023169!2d-75.22094812760513!3d3.2200513527180705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b91ad4011e49b%3A0x1fdfb10cd36809c1!2sCasa%20Flor%20de%20Liz!5e0!3m2!1sen!2sco!4v1736794471944!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Reserva llamando al </h2>
+    </main>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
